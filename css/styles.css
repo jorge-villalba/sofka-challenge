@@ -1,0 +1,258 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --tittle: 24px;
+    --paragraph: 18px;
+    --text: 14px;
+}
+
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.test-container {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-image: url(../img/world-globe.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.test {
+    display: grid;
+    width: 320px;
+    height: auto;
+    box-shadow: 0 4px 6px black;
+    border-radius: 18px;
+    padding: 18px;
+    margin: 12px;
+    place-content: center;
+    background-color: var(--very-dark-blue);
+}
+
+#test-info {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    font-size: var(--paragraph);
+}
+
+#test-info #score {
+    display: flex;
+}
+
+#test-image {
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 24px 0;
+    width: 300px;
+    justify-self: center;
+}
+
+#test-image img {
+    padding: 6px;
+    height: auto;
+    width: 240px;
+}
+
+#test-text {
+    color: var(--white);
+    font-size: var(--paragraph);
+    padding: 12px 0;
+    text-align: center;
+}
+
+#test-name form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#test-name form label {
+    font-size: var(--paragraph);
+    color: var(--white);
+    margin: 6px 0;
+}
+
+#test-name form input {
+    margin-bottom: 12px;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 240px;
+    height: 18px;
+    text-align: center;
+    font-size: var(--text);
+}
+
+#test-name form button {
+    padding: 6px;
+    background-color: var(--white);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100px;
+    font-size: var(--text);
+    font-weight: bold;
+}
+
+#test-name form button:hover {
+    background-color: var(--soft-blue);
+    cursor: pointer;
+}
+
+#test-main {
+    display: none;
+}
+
+#test-question {
+    color: var(--white);
+    text-align: center;
+    padding: 4px 6px 18px;
+    ;
+    font-size: var(--tittle);
+    font-weight: bold;
+}
+
+#test-options {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+
+}
+
+#test-options button {
+    padding: 6px;
+    margin: 4px;
+    background-color: var(--white);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 140px;
+    font-size: var(--text);
+    font-weight: bold;
+}
+
+#test-options button:hover {
+    background-color: var(--soft-blue);
+    cursor: pointer;
+}
+
+#test-result {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    margin: 4px;
+    color: var(--white);
+    font-size: var(--paragraph);
+    font-weight: bold;
+}
+
+#test-result p {
+    padding-top: 6px;
+}
+
+#test-result img {
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+}
+
+#test-choices {
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 24px 0 0;
+}
+
+#test-choices button {
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100px;
+    font-size: var(--text);
+    font-weight: bold;
+}
+
+#test-choices button:hover{
+    background-color: var(--soft-blue);
+    cursor: pointer;
+}
+
+#user-record {
+    display: flex;
+    justify-content: center;
+    margin: 0 12px 24px;
+    font-size: var(--text);
+    color: var(--white);
+}
+
+#user-record table {
+    text-align: center;
+    width: 200px;
+    height: auto;
+    border-collapse: collapse;
+}
+
+#user-record table th,td{
+    padding: 2px;
+    border: 1px solid var(--white);
+}
+
+#restart-test {
+    display: flex;
+    justify-content: center;
+}
+
+#restart-test button {
+    padding: 6px;
+    margin: 4px;
+    background-color: var(--white);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 140px;
+    font-size: var(--text);
+    font-weight: bold;
+    text-align: center;
+}
+
+#restart-test button:hover {
+    background-color: var(--soft-blue);
+    cursor: pointer;
+}
+
+#test-history {
+    display: flex;
+    justify-content: center;
+}
+
+#test-history button {
+    padding: 6px;
+    margin: 4px;
+    background-color: var(--white);
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 140px;
+    font-size: var(--text);
+    font-weight: bold;
+    text-align: center;
+}
+
+#test-history button:hover {
+    background-color: var(--soft-blue);
+    cursor: pointer;
+}

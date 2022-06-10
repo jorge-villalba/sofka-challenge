@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" href />
+    <title>Sofka Test</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div class="test-container">
+        <div class="test">
+            <div id="test-info">
+                <div id="question-number">
+                    <p id="progress"></p>
+                </div>
+                <div id="score"></div>
+            </div>
+            <div id="test-image">
+                <img src="./img/world-map.png" alt="world-map" />
+            </div>
+            <div id="test-text">
+                <p>¿Que tanto sabes de las capitales del mundo?</p>
+            </div>
+            <div id="test-name">
+                <form action="" id="initial-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="user-name" placeholder="Introduzca nombre (obligatorio)" required />
+                    <button id="start-test" type="button">Iniciar</button>
+                </form>
+            </div>
+            <div id="test-main">
+                <div id="test-question">
+                    <p id="country-text"></p>
+                </div>
+                <div id="test-options"></div>
+            </div>
+            <div id="test-result"></div>
+            <div id="test-choices">
+                <button>Finalizar</button>
+            </div>
+            <div id="user-record"></div>
+            <div id="restart-test"></div>
+            <div id="test-history"></div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
